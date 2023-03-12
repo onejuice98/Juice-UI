@@ -1,4 +1,5 @@
 import React from "react";
+import "./Button.scss";
 
 export interface ButtonProps {
   label: string;
@@ -7,7 +8,7 @@ export interface ButtonProps {
 
 const Button = ({ label, children }: ButtonProps) => {
   return (
-    <button>
+    <button className="Button">
       뭘보시나염
       {label}
       {children}
