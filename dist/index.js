@@ -1,6 +1,6 @@
 'use strict';
 
-var Button = require('./components/Button.js');
+var Button = require('./components/Button/Button.js');
 
 
 
