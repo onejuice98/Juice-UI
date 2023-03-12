@@ -7,8 +7,6 @@ import postcss from "rollup-plugin-postcss";
 
 const extensions = ["js", "jsx", "ts", "tsx", "mjs"];
 
-const pkg = require("./package.json");
-
 const config = [
   {
     external: [/node_modules/],
@@ -21,12 +19,12 @@ const config = [
         preserveModulesRoot: "src",
       },
       {
-        file: pkg.module,
+        file: "./dist/index.ex.js",
         format: "es",
       },
       {
-        name: pkg.name,
-        file: pkg.browser,
+        name: "@onejuice/juice-ui",
+        file: "./dist/index.umd.js",
         format: "umd",
       },
     ],
