@@ -1,19 +1,11 @@
 import React from "react";
-import "./Button.scss";
 
 export interface ButtonProps {
   label: string;
-  children?: React.ReactNode;
 }
 
-const Button = ({ label, children }: ButtonProps) => {
-  return (
-    <button className="Button">
-      뭘보시나염
-      {label}
-      {children}
-    </button>
-  );
+const Button = ({ label }: ButtonProps) => {
+  return <button className="rounded-md p-2 bg-primary">{label}</button>;
 };
 
 export default Button;

@@ -3,10 +3,10 @@ import Button from "./Button";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 
 export default {
-  title: "Test Button",
+  title: "Button",
   component: Button,
   argTypes: {
-    label: { control: "string" },
+    label: { control: "text" },
   },
 } as ComponentMeta<typeof Button>;
 
@@ -15,7 +15,7 @@ const Template: ComponentStory<typeof Button> = (args) => {
   return <Button label={label}></Button>;
 };
 
-export const Label = Template.bind({});
-Label.args = {
-  Label: "string",
+export const label = Template.bind({});
+label.args = {
+  label: "Button",
 };
